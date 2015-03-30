@@ -1,0 +1,29 @@
+body {
+  background: url("http://fc04.deviantart.net/fs70/i/2012/028/2/9/steampunk_guitar_by_steampunk22-d4nw3yu.jpg");
+  background-size: cover;
+  color: rgba(100,100,100,.9);
+}
+
+.title2 {
+  float: right;
+  margin-right: 8%;
+}
+
+.noteButtons {
+  height: 150px;
+  width: 260px;
+  margin: auto;
+  text-align: center;
+  color: rgba(180,180,180,.9);
+}
+
+.gstrings {
+  text-align: center;
+}
+
+.sButton {
+  height: 50px;
+  width: 260px;
+  margin: auto;
+  text-align: center;
+}
