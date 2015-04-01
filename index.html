@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="wad.min.js"></script>
-<script type="text/javascript" src="audio.js"></script>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -27,17 +26,17 @@
 
     <div class="noteButtons"> <h3>Guitar</h3><h4>(Standard tuning)</h4><br>
     <form action="">
-      <input class="gStrings" type="submit" id="lowE"  value="Low E">
-      <input class="gStrings" type="submit" id="A" value="A">
-      <input class="gStrings" type="submit" id="D" value="D">
-      <input class="gStrings" type="submit" id="G" value="G">
-      <input class="gStrings" type="submit" id="B" value="B">
-      <input class="gStrings" type="submit" id="highE" value="High E">
+      <input class="gStrings" type="button" id="lowE"  value="Low E">
+      <input class="gStrings" type="button" id="A" value="A">
+      <input class="gStrings" type="button" id="D" value="D">
+      <input class="gStrings" type="button" id="G" value="G">
+      <input class="gStrings" type="button" id="B" value="B">
+      <input class="gStrings" type="button" id="highE" value="High E">
     </form>
     </div>
 
     <div class="sButton">
-      <input id="stopPlay" type="submit" value="stop">
+      <input id="stopPlay" type="button" value=" stop ">
     </div>
 
 
@@ -45,6 +44,9 @@
     <div class="title2">
       <h1>Jam out!</h1>
     </div>
+
+
+    <script type="text/javascript" src="audio.js"></script>
 
   </body>
 </html>
