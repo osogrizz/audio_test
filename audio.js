@@ -46,7 +46,7 @@ $("#highE" ).click(function() {
 });
 
 
-// $("#stopPlay").click(stopSound);
+$("#stopPlay").click(stopSound);
 
 
 
@@ -150,6 +150,25 @@ var E4 = new Wad({
     release: 0.2
   }
 });
+
+var sine = new Wad({source : 'sine'});
+var mixerTrack = new Wad.Poly({
+    recConfig : { // The Recorder configuration object. The only required property is 'workerPath'.
+        workerPath : '/src/Recorderjs/recorderWorker.js' // The path to the Recorder.js web worker script.
+    }
+});
+mixerTrack.add(sine);
+
+mixerTrack.rec.record();             // Start recording output from this PolyWad.
+sine.play({pitch : 'C3'});           // Make some noise!
+mixerTrack.rec.stop();               // Take a break.
+mixerTrack.rec.record();             // Append to the same recording buffer.
+sine.play({pitch : 'G3'});
+mixerTrack.rec.stop();
+mixerTrack.rec.createWad();          // This method accepts the same arguments as the Wad constructor, except that the 'source' is implied, so it's fine to call this method with no arguments. 
+mixerTrack.rec.recordings[0].play(); // The most recent recording is unshifted to the front of this array.
+mixerTrack.rec.clear();  
+
 
 }
 window.onload = addListeners();
