@@ -19,6 +19,8 @@ body {
 
 .gstrings {
   text-align: center;
+  background-color: rgba();
+  color: black;
 }
 
 .sButton {
@@ -32,3 +34,22 @@ body {
   margin: auto;
   text-align: center;
 }
+
+#record {
+  background-color: red;
+  border-radius: 5px;
+  color: black;
+}
+
+#stopRec {
+  border-radius: 5px;
+  color: black;
+}
+
+
+
+
+
+
+
+

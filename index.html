@@ -35,15 +35,20 @@
     </form>
     </div>
 
-    <div class="sButton">
+    <!-- <div class="sButton">
       <input id="stopPlay" type="button" value=" stop ">
-    </div>
+    </div> -->
 
     <div class="recWrap">
-      <button onclick="startRecording(this);">record</button>
-      <button onclick="stopRecording(this);" disabled>stop</button>
+      <button id="record" onclick="startRecording(this);">RECORD</button>
+      <button id="stopRec" onclick="stopRecording(this);" disabled>STOP</button>
     </div>
-
+    
+  <h2>Recordings</h2>
+  <ul id="recordingslist"></ul>
+  
+  <h2>Log</h2>
+  <pre id="log"></pre>
 
     <div class="title2">
       <h1>Jam out!</h1>
